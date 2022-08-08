@@ -4,7 +4,7 @@ int main(){
     int a, b;
     printf("Enter the value of a and b: \n");
     scanf("%d %d", &a, &b);
-    int temp = a;
+    int temp = a; // 4 byte
     a = b;
     b = temp;
 
