@@ -11,5 +11,14 @@ int main(){
         }
         printf("\n");
     }
-    
+    rows--; // reduce the row
+    for(int i = 0; i < rows; i++){
+        for(int j = 0; j <= i + 1; j++) printf(" "); // space print
+        for(int k = 0; k < rows - i; k++){
+            printf("* ");
+        }
+        printf("\n");
+    }
+    return 0;
+
 }
