@@ -19,6 +19,7 @@ int main(){
     printf("Please enter the number of elements: \n");
     scanf("%d", &n);
     int a[n];
+    //input
     for(int i = 0; i < n; i++){
         a[i] = rand() % 100;
     }

@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int isPrimeNumber(int n){
-    for(int i =2;i <= n/2; i++) {
+    for(int i = 2;i <= n/2; i++) {
         if(n % i == 0)
             return 0;
      }
@@ -19,13 +19,9 @@ int main()
 
     for(i=2; i<=num; i++)
     {
-        if(num%i==0)
+        if(num%i==0 && isPrimeNumber(i) == 1) // factor and prime
         {
-            isPrime = isPrimeNumber(i);
-            if(isPrime==1)
-            {
-                printf("%d ", i);
-            }
+            printf("%d ", i);
         }
     }
 
